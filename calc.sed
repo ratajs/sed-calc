@@ -5,9 +5,11 @@ d
 
 :A
 h;s/.*\n//;x;s/\n.*/\n\n/;t a
+
 :a
 s/(.*)(.)\n(.*)\n(.*)/\1\n\2\n\3\4/;t aa
 s/\n(.*)\n(.*)/\1\2/;x;G;s/\n//;p;d
+
 :aa
 x
 s/0$//;t a0
@@ -21,8 +23,10 @@ s/7$//;t a7
 s/8$//;t a8
 s/9$//;t a9
 x;s/\n//g;p;d
+
 :a0
 x;b a
+
 :a1
 x
 s/\n0\n/\n1\n/;t a
@@ -36,6 +40,7 @@ s/\n7\n/\n8\n/;t a
 s/\n8\n/\n9\n/;t a
 s/\n9\n/\n0\n/
 x;s/$/_/;t ac
+
 :a2
 x
 s/\n0\n/\n2\n/;t a
@@ -49,6 +54,7 @@ s/\n7\n/\n9\n/;t a
 s/\n8\n/\n0\n/
 s/\n9\n/\n1\n/
 x;s/$/_/;t ac
+
 :a3
 x
 s/\n0\n/\n3\n/;t a
@@ -62,6 +68,7 @@ s/\n7\n/\n0\n/
 s/\n8\n/\n1\n/
 s/\n9\n/\n2\n/
 x;s/$/_/;t ac
+
 :a4
 x
 s/\n0\n/\n4\n/;t a
@@ -75,6 +82,7 @@ s/\n7\n/\n1\n/
 s/\n8\n/\n2\n/
 s/\n9\n/\n3\n/
 x;s/$/_/;t ac
+
 :a5
 x
 s/\n0\n/\n5\n/;t a
@@ -88,6 +96,7 @@ s/\n7\n/\n2\n/
 s/\n8\n/\n3\n/
 s/\n9\n/\n4\n/
 x;s/$/_/;t ac
+
 :a6
 x
 s/\n0\n/\n6\n/;t a
@@ -101,6 +110,7 @@ s/\n7\n/\n3\n/
 s/\n8\n/\n4\n/
 s/\n9\n/\n5\n/
 x;s/$/_/;t ac
+
 :a7
 x
 s/\n0\n/\n7\n/;t a
@@ -114,6 +124,7 @@ s/\n7\n/\n4\n/
 s/\n8\n/\n5\n/
 s/\n9\n/\n6\n/
 x;s/$/_/;t ac
+
 :a8
 x
 s/\n0\n/\n8\n/;t a
@@ -127,6 +138,7 @@ s/\n7\n/\n5\n/
 s/\n8\n/\n6\n/
 s/\n9\n/\n7\n/
 x;s/$/_/;t ac
+
 :a9
 x
 s/\n0\n/\n9\n/;t a
